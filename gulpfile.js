@@ -11,4 +11,5 @@ gulp.task('copy-html', function() {
 
 gulp.task('default', ['copy-html'], function() {
     gulp.watch('app/index.html', ['copy-html']);
+    gulp.watch('app/*.css', ['copy-html']);
 });
