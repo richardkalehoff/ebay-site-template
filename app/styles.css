@@ -13,7 +13,7 @@ html, body {
     background: -ms-linear-gradient(silver, black);
     background: -o-linear-gradient(silver, black);
 }
-#texturedbox {
+.texturedbox {
     padding: 0px;
     width: 950px;
     height: 30px;
