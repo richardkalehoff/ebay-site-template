@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, body {
     min-height: 100%;
     width: 100%;
@@ -20,6 +27,69 @@ html, body {
     background-image: repeating-linear-gradient(135deg, transparent, transparent .5px, rgba(255,255,255,.5) .5px, rgba(255,255,255,.5) 2px);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222222', EndColorStr='#AAAAAA')";
 }
+.container {
+    margin: auto;
+    width: 950px;
+}
+
+.content {
+    background: white;
+    padding: 1em 1em 1.5em;
+}
+
+.group::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.divider {
+    padding: 0px;
+    width: 950px;
+    height: 30px;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent .5px, rgba(255,255,255,.5) .5px, rgba(255,255,255,.5) 2px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222222', EndColorStr='#AAAAAA')";
+}
+
+.emphasis {
+    font-weight: bold;
+}
+
+.heading:first-child {
+    margin-top: 0;
+}
+
+.column {
+    width: calc((100% - 2em) / 2);
+}
+
+.column-1 {
+    float: left;
+}
+
+.column-2 {
+    float: right;
+}
+
+.store-logo {
+    float: left;
+    margin-left: 0.5em;
+}
+
+.store-banner {
+    float: left;
+    margin-left: 1em;
+}
+
+.store-highlight {
+    color: white;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
 #roundedrectangle {
     border-radius: 25px 25px 0px 0px;
     background: #535353;
@@ -34,25 +104,22 @@ html, body {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000000', endColorstr=#535353);/*For IE7-8-9*/
     height: 1%;/*For IE7*/
 }
-.hubadapter {
+
+.product-selection {
+    width: 100%;
     border:1px solid #000000;
     border-collapse:collapse;
     padding:5px;
     font-size:14px;
 }
-.hubadapter caption {
-    text-align:left;
-}
-.hubadapter th {
+.product-selection th {
     border:1px solid #000000;
     text-align:left;
     padding:0px;
     background:#808080;
 }
-.hubadapter td {
+.product-selection td {
     border:1px solid #000000;
-    text-align:left;
-    padding:0px;
     background:#C0C0C0;
 }
 .image {
@@ -90,8 +157,6 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #000000;
-    font-weight: normal;
-}
-borders {
-    border: thin solid #6E3E00;
+    margin: 0;
+    line-height: 1.5;
 }
