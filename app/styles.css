@@ -1,0 +1,97 @@
+html, body {
+    min-height: 100%;
+    width: 100%;
+    background-color: #535353;
+    background-repeat:no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=silver, endColorstr='#000000');/*For IE7-8-9*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: linear-gradient(silver, black);
+    background: -webkit-linear-gradient(silver, black);
+    background: -moz-linear-gradient(silver, black);
+    background: -ms-linear-gradient(silver, black);
+    background: -o-linear-gradient(silver, black);
+}
+#texturedbox {
+    padding: 0px;
+    width: 950px;
+    height: 30px;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent .5px, rgba(255,255,255,.5) .5px, rgba(255,255,255,.5) 2px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222222', EndColorStr='#AAAAAA')";
+}
+#roundedrectangle {
+    border-radius: 25px 25px 0px 0px;
+    background: #535353;
+    padding: 0px;
+    width: 950px;
+    height: 150px;
+    background: gray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #535353); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #535353); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #535353); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #535353); /* Standard syntax */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000000', endColorstr=#535353);/*For IE7-8-9*/
+    height: 1%;/*For IE7*/
+}
+.hubadapter {
+    border:1px solid #000000;
+    border-collapse:collapse;
+    padding:5px;
+    font-size:14px;
+}
+.hubadapter caption {
+    text-align:left;
+}
+.hubadapter th {
+    border:1px solid #000000;
+    text-align:left;
+    padding:0px;
+    background:#808080;
+}
+.hubadapter td {
+    border:1px solid #000000;
+    text-align:left;
+    padding:0px;
+    background:#C0C0C0;
+}
+.image {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+h2 {
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size:22px;
+    color: #FFFFFF;
+    top: -22px;
+    left: 10px;
+    width: 100%;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    font-weight: normal;
+}
+borders {
+    border: thin solid #6E3E00;
+}
