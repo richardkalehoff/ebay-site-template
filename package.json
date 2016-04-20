@@ -9,6 +9,7 @@
   "author": "Richard Kalehoff",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^1.3.0"
   }
 }
